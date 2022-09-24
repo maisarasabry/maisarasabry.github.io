@@ -25,7 +25,6 @@
   }
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="https://maisarasabry.github.io/w3.css">
@@ -91,16 +90,15 @@
           <div id="Accordion1" class="w3-accordion-content w3-right-align">
             <a class="sl" data-shk="maher">إذاعة القارئ ماهر المعيقلي</a>
             <a class="sl" data-shk="ajamy">إذاعة القارئ أحمد العجمي</a>
-            <a class="sl" data-shk="sodis">إذاعة القارئ عبدالرحمن السديس </a>
             <a class="sl" data-shk="shorim">ذاعة القارئ سعود الشريم </a>
             <a class="sl" data-shk="dosry">إذاعة القارئ ياسر الدوسري</a>
             <a class="sl" data-shk="mashary">إذاعة القارئ مشاري العفاسي</a>
             <a class="sl" data-shk="abdelbaset">إذاعة القارئ عبدالباسط عبدالصمد</a>
             <a class="sl" data-shk="menshawy">إذاعة القارئ محمد صديق المنشاوي</a>
+            <a class="sl" data-shk="hosary">إذاعة القارئ محمود الحصري</a>
             <a class="sl" data-shk="ghamdy">إذاعة القارئ سعد الغامدي</a>
             <a class="sl" data-shk="fares">إذاعة القارئ فارس عباد</a>
             <a class="sl" data-shk="shatry">إذاعة القارئ شيخ أبو بكر الشاطري</a>
-            <a class="sl" data-shk="hosary">إذاعة القارئ محمود الحصري</a>
             <a href="#"></a>
           </div>
 
@@ -205,20 +203,19 @@
     }
   }
   $(document).ready(function (e) {
-    Accordion("Accordion1");
+
     var quran = {
-      maher: "http://live.mp3quran.net:9996/;",
-      ajamy: "http://live.mp3quran.net:9990/;",
-      sodis: "http://live.mp3quran.net:9988/;",
-      shorim: "http://live.mp3quran.net:9986/;",
-      dosry: "http://live.mp3quran.net:9984/;",
-      mashary: "http://live.mp3quran.net:9982/;",
-      abdelbaset: "http://live.mp3quran.net:9980/;",
-      menshawy: "http://live.mp3quran.net:9978/;",
-      ghamdy: "http://live.mp3quran.net:9976/;",
-      fares: "http://live.mp3quran.net:9972/;",
-      shatry: "http://live.mp3quran.net:9966/;",
-      hosary: "http://live.mp3quran.net:9958/;"
+      maher: "https://qurango.net/radio/maher_al_meaqli",
+      ajamy: "https://qurango.net/radio/ahmad_alajmy",
+      shorim: "https://qurango.net/radio/saud_alshuraim",
+      dosry: "https://qurango.net/radio/yasser_aldosari",
+      mashary: "https://qurango.net/radio/mishary_alafasi",
+      abdelbaset: "https://qurango.net/radio/abdulbasit_abdulsamad",
+      menshawy: "https://qurango.net/radio/mohammed_siddiq_alminshawi",
+      ghamdy: "https://qurango.net/radio/saad_alghamdi",
+      fares: "https://qurango.net/radio/fares_abbad",
+      shatry: "https://qurango.net/radio/shaik_abu_bakr_al_shatri",
+      hosary: "https://qurango.net/radio/mahmoud_khalil_alhussary"
     };
     var audio = $("#player");
     audio[0].volume = 0.5;
